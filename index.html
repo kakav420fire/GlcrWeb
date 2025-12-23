@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f0f14;
+            color: #ffffff;
+        }
+
+        header {
+            background: #6b4eff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: #1a1a24;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        button {
+            background: #6b4eff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5a3fe0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #aaa;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Test Website</h1>
+    <p>HTML • CSS • JavaScript</p>
+</header>
+
+<main>
+    <div class="card">
+        <h2>Welcome</h2>
+        <p>This is a basic test page. You can use it to experiment with layouts, scripts, or styles.</p>
+        <button onclick="showMessage()">Click Me</button>
+    </div>
+
+    <div class="card" id="output">
+        <h2>Output</h2>
+        <p>No action yet.</p>
+    </div>
+</main>
+
+<footer>
+    © 2025 Test Site
+</footer>
+
+<script>
+    function showMessage() {
+        const output = document.getElementById("output");
+        output.innerHTML = `
+            <h2>Output</h2>
+            <p>Button clicked successfully!</p>
+        `;
+    }
+</script>
+
+</body>
+</html>
